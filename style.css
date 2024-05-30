@@ -1,1 +1,37 @@
 /* Add styles here */
+/* style.css */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2d546b; /* Optional: a light background color */
+  }
+  .center-container {
+    text-align: center;
+  }
+
+  h1{
+    text-align:start;
+    color:white;
+  }
+  
+  button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove border */
+    color: rgb(0, 0, 0); /* White text */
+    padding: 15px 32px; /* Padding */
+    text-align: center; /* Center text within button */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Display inline-block */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 12px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+  }
+
+  button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
