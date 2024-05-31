@@ -1,22 +1,25 @@
-class covecoin
+class coinclicka
 {
-    constructor()
+    constructor(type_of_coin)
     {
         this.coins = 1;
         this.mineTotal = 0;
-        this.button = document.getElementById("mine");
-        this.button.addEventListener("click", mine());
-        const displayElement = document.getElementById("balance");
-        this.updateDisplay();
+
+        this.type_of_coin = type_of_coin;
     }
     updateDisplay() 
     {
-        displayElement.innerText = `CoveCoins: ${this.mineTotal}`;
+        this.displayElement = document.getElementById(this.type_of_coin+"_balance");
+        this.displayElement.innerText = `Coins: ${this.mineTotal}`;
     }
     mine()
     {
         this.mineTotal += this.coins;
         console.log("+${this.coins} coins");
-        updateDisplay();
-    }    
+        this.updateDisplay();
+    }
 }
+
+const _CoveCoin = new coinclicka('CoveCoin');
+const _AesopCoin = new coinclicka('AesopCoin');
+

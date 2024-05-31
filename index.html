@@ -7,10 +7,18 @@
   <link href="style.css" rel="stylesheet">
 </head>
 <body>
-  <h1>Cove Coin</h1>
-  <p id="balance"> CoveCoins:0</p>
-  <button id = "mine" onclick="mine()">Mine CoveCoin</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+  <div id="CoveCoin">
+    <h1>Cove Coin</h1>
+    <p id="CoveCoin_balance"> CoveCoins:0</p>
+    <button onclick="_CoveCoin.mine()">Mine CoveCoin</button>
+  </div>
+
+  <div id="AesopCoin">
+    <h1>Aesop Coin</h1>
+    <p id="AesopCoin_balance"> Coins:0</p>
+    <button onclick="_AesopCoin.mine()">Mine AesopCoin</button>
+  </div>
+
+  <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
-`
